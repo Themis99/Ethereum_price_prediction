@@ -32,5 +32,7 @@ Below the matrixs presents the metric results:
 | MAE | 0.024 |
 |MAPE | 7.635 |
 
+The metric results are derived from the Test set. The results are very impressive!, considering that MAPE below 10 is widely accepted as a good performance.
 
-The metric results are derived from the Test set.
+The Graph below presents the train and test loss across the epochs:
+
