@@ -35,4 +35,8 @@ Below the matrixs presents the metric results:
 The metric results are derived from the Test set. The results are very impressive!, considering that MAPE below 10 is widely accepted as a good performance.
 
 The Graph below presents the train and test loss across the epochs:
+![Figure_2](https://user-images.githubusercontent.com/46052843/182432517-f0572749-a393-4fbd-8619-0ae2978b494e.png)
+
+And finally, the graph below presents the actual price compared with the predicted price, for the Test set:
+
 
