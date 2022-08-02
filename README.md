@@ -8,3 +8,29 @@ To predict the price of Etherium we decided to adopt deep learning methods. The 
 In the main project, we fine-tune the lag (look-back window of the model) and fine-tune the hyperparameters of the model. In the current project we train the model with the optimal lag we found without further hyperparametric tuning. For more information about the main project contact me personally. 
 
 The model was trained with batch size 1 for 100 epochs and lag 74 days. The horizon was set to 1 day (next day prediction). For the loss function the Log-Cosh function was used.
+
+# Data
+
+The following variables were considered to predict the closing price of Etherium:
+
+Open, High, Low, Close (target variable), Bitcoin price, Fear and Greed Index for Bitcoin
+
+The price of Bitcoin was used because it has a high positive correlation with the price of Etherium. Accordingly, we thought it appropriate to take into account the price of the Fear and Greed Index. The Fear and Greed indicator reflects the general market sentiment about the fate of Bitcoin (Fear Or Greed). More about the Fear and Greed indicator can be found here [].
+
+Min-max normalization was performed on the original data they before were used for training and evaluation. Min-max normalization was used as it is the most commonly used method for data normalization in research dealing with cryptocurrency prediction
+
+# Results
+Four different metrics were used to evaluate the model: 
+MSE, RMSE, MAE, MAPE
+
+Below the matrixs presents the metric results:
+
+| Metric       | Value        | 
+| ------------- |:-------------:|
+| MSE   | 0.001 |
+| RMSE   |  0.027|
+| MAE | 0.024 |
+|MAPE | 7.635 |
+
+
+The metric results are derived from the Test set.
