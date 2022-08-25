@@ -4,7 +4,7 @@
 
 In this project, we try to predict the price of Ethereum for the next day. This project is part of a larger project that I have been working on in collaboration with one of my friends. In the main project, we are trying to apply more complicated methods and fine-tune the model to predict the price of Ethereum.
  
-To predict the price of Etherium we decided to adopt deep learning methods. The reason for this choice is that classical time series forecasting methods proved inadequate to achieve good results on time series derived from economic data. Another reason is that deep learning methods adequately address the problem of non-stationarity for time series data. Following the research done in the paper [1], there are three main groups of deep learning architectures used in time series forecasting problems: RNN based with their different variants (LSTM, GRU), transformer-based, and convolution-based. The research then presents a comparative study between certain architectures and their performance on several datasets. From this research, the best performances were obtained by the models based on convolution-based architectures
+To predict the price of Etherium we decided to adopt deep learning methods. The reason for this choice is that classical time series forecasting methods proved inadequate to achieve good results on time series derived from economic data. Another reason is that deep learning methods adequately address the problem of non-stationarity for time series data. Following the research done in the paper [1], there are three main groups of deep learning architectures used in time series forecasting problems: RNN based with their different variants (LSTM, GRU), transformer-based, and convolution-based. The research then presents a comparative study between certain architectures and their performance on several datasets. From this research, the best performances were obtained by the models based on convolution-based architectures.
 
 # For this project
 For the project we used the TNC (Temporal Convolution Network) model presented in the research [2]. The implementation of this model exists here https://github.com/philipperemy/keras-tcn
@@ -21,7 +21,7 @@ Open, High, Low, Close (target variable), Bitcoin price, Fear and Greed Index fo
 
 The price of Bitcoin was used because it has a high positive correlation with the price of Etherium. Accordingly, we thought it appropriate to take into account the price of the Fear and Greed Index. The Fear and Greed indicator reflects the general market sentiment about the fate of Bitcoin (Fear Or Greed). More about the Fear and Greed indicator can be found here https://alternative.me/crypto/fear-and-greed-index/.
 
-Min-max normalization was performed on the original data they before were used for training and evaluation. Min-max normalization was used as it is the most commonly used method for data normalization in research dealing with cryptocurrency prediction
+Min-max normalization was performed on the original data they before were used for training and evaluation. Min-max normalization was used as it is the most commonly used method for data normalization in research dealing with cryptocurrency prediction.
 
 # Results
 Four different metrics were used to evaluate the model: 
